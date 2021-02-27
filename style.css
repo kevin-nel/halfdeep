@@ -1,0 +1,195 @@
+* {
+	padding: 0px;
+	margin: 0%;
+}
+
+@keyframes AnimationName {
+	0%{background-position:14% 0%}
+	50%{background-position:87% 100%}
+	100%{background-position:14% 0%}
+}
+
+body {
+	cursor: auto;
+	/*background-color: #ccc;*/
+	background: black;
+    background-size: 600% 600%;
+    animation: AnimationName 59s ease infinite;
+	color: white;
+    font-family: 'Ubuntu', sans-serif;
+	font-size: 12pt;
+	font-weight: lighter;
+	height: 100%;
+}
+
+.name{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: inherit;
+	color: rgb(170, 170, 170);
+	font-style: normal;
+	display: inline;
+}
+
+.name#accent{
+	color: #333;
+	display: inline;
+}
+
+h1{
+	font-size: 24pt;
+    font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-weight: 900;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+h1#title{
+	font-size: 36pt;
+}
+
+h2{
+	font-size: 20pt;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-weight: 900;
+}
+
+h1,h2,h3,h4{
+	margin-top: 15px;
+}
+
+a {
+	text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+	color: inherit;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.container{
+	padding: 48px;
+}
+
+.child {
+	padding: 48px;
+	margin: 0 auto;
+	margin-top: 48px;
+	margin-bottom: 48px;
+	width: 40vw;
+	background-color: #eee;
+	color: #333;
+	box-shadow: 15px 15px 10px 0px rgba(52,52,52,0.4);
+}
+
+.center{
+    display: flex;
+	margin: 5px auto;
+    justify-content: center;
+}
+
+.column{
+	flex: 50%;
+}
+
+.row{
+	justify-content: space-evenly;
+	display: flex;
+	width: 100%;
+	margin: 0 0;
+}
+
+#left{
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+
+img{
+	margin-top: 12px;
+	margin-bottom: 12px;
+	max-width: 100%;
+}
+
+img.center{
+	width: 50%;
+	display: block;
+	margin: 5px auto;
+}
+
+hr{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+ul{
+	list-style-type: none;
+}
+/*nav bar*/
+nav>ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 16pt;
+	font-style: inherit;
+	margin:0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+nav>ul>li{
+	text-align: center;
+	padding: 5px 5px;
+}
+
+nav{
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*block quotes*/
+q {
+	font-size: 85%;
+	font-style: italic;
+}
+
+/*marquee*/
+marquee{
+	color: #eeeeee;
+}
+
+@media screen and (max-width: 800px) {
+	.child{
+		width: auto;
+		font-size: 15px;
+		padding: 5px;
+		border: none;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.container{
+		padding: 0;
+	}
+
+	marquee{
+		display: none;
+	}
+	h1#title{
+		font-size: 24pt;
+	}
+	p{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	img.center{
+		width: 65%;
+	}
+	hr{
+		width: 70%;
+	}
+}
